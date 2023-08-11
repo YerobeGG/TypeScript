@@ -16,3 +16,13 @@ function toUpeer(value: string){
 }
 
 console.log(toUpeer('hola, buenas tardes'))
+
+
+function checkAge(age: number){
+    if (age >= 18)
+        console.log("Es mayor de edad")
+    else
+        console.log("No es mayor de edad")
+}
+
+checkAge(8)
