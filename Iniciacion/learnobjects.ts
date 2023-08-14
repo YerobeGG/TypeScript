@@ -1,3 +1,7 @@
-function activesEmployes({name: string, isActive: boolean}){}
+function createUser({name: string, isPaid: boolean}){}
 
-activesEmployes({name: "Paco", isActive: true})
+createUser({name: "Yerobe", isPaid: true})
+
+function createUser():{name: string, isPaid: boolean}{
+    return {name: "Yerobe", isPaid: true}
+}
