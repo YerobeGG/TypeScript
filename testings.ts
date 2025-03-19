@@ -5,18 +5,11 @@
 //     console.log(letras[base])
 // }
 
-let start = "10.0.1.0"
-let end = "10.0.0.10"
-let convertListS = start.split(".").map(Number)
-let convertListE = end.split(".").map(Number)
-console.log(convertListS[0])
-console.log(convertListS[1])
-console.log(typeof convertListS[0])
-if (convertListS[3] !== convertListE[3]){
-    console.log(convertListE[3] - convertListS[3])
-}
-else if (convertListE[2] > convertListS[2]){
-    convertListE[3] = 256
-    console.log(convertListE[3] - convertListS[3]) 
+
+let list = [10, 20, 20, 30, 10]
+let frequency: Record<number, number> = {};
+for (let value of list){
+    frequency[value] = (frequency[value] || 0) + 1;
 }
 
+console.log(frequency);
